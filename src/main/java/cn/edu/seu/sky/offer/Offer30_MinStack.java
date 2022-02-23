@@ -1,7 +1,6 @@
 package cn.edu.seu.sky.offer;
 
 import java.util.LinkedList;
-import java.util.Optional;
 
 /**
  * @author xiaotian
