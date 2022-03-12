@@ -8,13 +8,18 @@ package cn.edu.seu.sky.offer;
 public class Offer42_MaxSubArray {
 
     public int maxSubArray(int[] nums) {
-        return 0;
+        int max = nums[0];
+        int former = 0;
+        for (int num : nums) {
+            num += Math.max(former, 0);
+            max = Math.max(max, num);
+            former = num;
+        }
+        return max;
     }
 
     public static void main(String[] args) {
         Offer42_MaxSubArray function = new Offer42_MaxSubArray();
-
-        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-        System.out.println(function.maxSubArray(nums));
+        System.out.println(function.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
     }
 }
