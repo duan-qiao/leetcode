@@ -2,6 +2,7 @@ package cn.edu.seu.sky.hot;
 
 /**
  * @author xiaotian on 2022/4/12
+ * https://leetcode.cn/problems/longest-palindromic-substring/
  */
 public class Hot05_Palindrome {
 

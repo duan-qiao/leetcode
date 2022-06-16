@@ -2,6 +2,7 @@ package cn.edu.seu.sky.hot;
 
 /**
  * @author xiaotian on 2022/4/12
+ * https://leetcode.cn/problems/add-two-numbers/
  */
 public class Hot02_TwoAdd {
 
