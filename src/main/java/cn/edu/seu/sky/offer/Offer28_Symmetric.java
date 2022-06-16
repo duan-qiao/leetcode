@@ -1,5 +1,7 @@
 package cn.edu.seu.sky.offer;
 
+import cn.edu.seu.sky.common.TreeNode;
+
 /**
  * @author xiaotian
  * <p>
@@ -20,16 +22,4 @@ public class Offer28_Symmetric {
         }
         return recur(L.left, R.right) && recur(L.right, R.left);
     }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
-
 }

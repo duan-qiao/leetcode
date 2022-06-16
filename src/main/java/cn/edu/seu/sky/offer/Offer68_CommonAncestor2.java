@@ -1,5 +1,7 @@
 package cn.edu.seu.sky.offer;
 
+import cn.edu.seu.sky.common.TreeNode;
+
 /**
  * @author xiaotian
  * <p>
@@ -27,15 +29,5 @@ public class Offer68_CommonAncestor2 {
             return left;
         }
         return root;
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

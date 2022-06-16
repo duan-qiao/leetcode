@@ -1,5 +1,7 @@
 package cn.edu.seu.sky.offer;
 
+import cn.edu.seu.sky.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -41,16 +43,6 @@ public class Offer32_LevelOrder3 {
             }
         }
         return list;
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 
     public static void main(String[] args) {

@@ -1,5 +1,7 @@
 package cn.edu.seu.sky.offer;
 
+import cn.edu.seu.sky.common.TreeNode;
+
 /**
  * @author xiaotian
  *
@@ -8,16 +10,6 @@ package cn.edu.seu.sky.offer;
 public class Offer54_kthLargest {
 
     int count = 0, val = 0;
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
     public int kthLargest(TreeNode root, int k) {
         dfs(root, k);

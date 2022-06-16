@@ -1,7 +1,6 @@
 package cn.edu.seu.sky.offer;
 
-import java.util.ArrayList;
-import java.util.List;
+import cn.edu.seu.sky.common.ListNode;
 
 /**
  * @author xiaotian
@@ -25,36 +24,9 @@ public class Offer18_DeleteNode {
         return head;
     }
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
-    public void printNode(ListNode head) {
-        List<Integer> list = new ArrayList<>();
-        while (head != null) {
-            list.add(head.val);
-            head = head.next;
-        }
-        System.out.println(list);
-    }
-
     public static void main(String[] args) {
-        ListNode node1 = new ListNode(4);
-        ListNode node2 = new ListNode(5);
-        ListNode node3 = new ListNode(1);
-        ListNode node4 = new ListNode(9);
-        node1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-
+        ListNode node = ListNode.create(new int[]{4, 5, 1, 9}).print();
         Offer18_DeleteNode function = new Offer18_DeleteNode();
-        function.printNode(node1);
-        ListNode node = function.deleteNode(node1, 1);
-        function.printNode(node);
+        function.deleteNode(node, 1).print();
     }
 }

@@ -1,5 +1,7 @@
 package cn.edu.seu.sky.offer;
 
+import cn.edu.seu.sky.common.ListNode;
+
 import java.util.Arrays;
 import java.util.Stack;
 
@@ -39,22 +41,8 @@ public class Offer06_ReversePrint {
         return array;
     }
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        ListNode node1 = new ListNode(3);
-        ListNode node2 = new ListNode(2);
-        head.next = node1;
-        node1.next = node2;
-
+        ListNode head = ListNode.create(new int[]{1, 3, 2}).print();
         Offer06_ReversePrint function = new Offer06_ReversePrint();
         System.out.println(Arrays.toString(function.reversePrint(head)));
     }

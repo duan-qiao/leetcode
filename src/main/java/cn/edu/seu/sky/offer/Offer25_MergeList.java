@@ -1,7 +1,6 @@
 package cn.edu.seu.sky.offer;
 
-import java.util.ArrayList;
-import java.util.List;
+import cn.edu.seu.sky.common.ListNode;
 
 /**
  * @author xiaotian
@@ -26,41 +25,11 @@ public class Offer25_MergeList {
         return head.next;
     }
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
-    public static void printNode(ListNode head) {
-        List<Integer> list = new ArrayList<>();
-        while (head != null) {
-            list.add(head.val);
-            head = head.next;
-        }
-        System.out.println(list);
-    }
-
     public static void main(String[] args) {
-        ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(4);
-        node1.next = node2;
-        node2.next = node3;
-        printNode(node1);
-
-        ListNode node4 = new ListNode(1);
-        ListNode node5 = new ListNode(3);
-        ListNode node6 = new ListNode(5);
-        node4.next = node5;
-        node5.next = node6;
-        printNode(node4);
+        ListNode node1 = ListNode.create(new int[]{1, 2, 4}).print();
+        ListNode node2 = ListNode.create(new int[]{1, 3, 5}).print();
 
         Offer25_MergeList function = new Offer25_MergeList();
-        ListNode listNode = function.mergeTwoLists(node1, node4);
-        printNode(listNode);
+        function.mergeTwoLists(node1, node2).print();
     }
 }

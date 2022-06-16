@@ -1,6 +1,7 @@
 package cn.edu.seu.sky.offer;
 
-import java.util.Arrays;
+import cn.edu.seu.sky.common.TreeNode;
+
 import java.util.HashMap;
 
 /**
@@ -48,15 +49,5 @@ public class Offer07_BuildTree {
         // 右子树的根，就是右子树（前序遍历）的第一个，就是当前根节点 加上左子树的数量
         node.right = recur(root + i - left + 1, i + 1, right);
         return node;
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

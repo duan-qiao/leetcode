@@ -1,5 +1,7 @@
 package cn.edu.seu.sky.offer;
 
+import cn.edu.seu.sky.common.ListNode;
+
 /**
  * @author xiaotian
  *
@@ -18,15 +20,5 @@ public class Offer52_CommNode {
             p2 = p2 == null ? headA : p2.next;
         }
         return p1;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
     }
 }

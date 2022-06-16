@@ -1,5 +1,7 @@
 package cn.edu.seu.sky.offer;
 
+import cn.edu.seu.sky.common.TreeNode;
+
 /**
  * @author xiaotian
  *
@@ -23,15 +25,5 @@ public class Offer26_SubTree {
             return false;
         }
         return A.val == B.val && dfs(A.left, B.left) && dfs(A.right, B.right);
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

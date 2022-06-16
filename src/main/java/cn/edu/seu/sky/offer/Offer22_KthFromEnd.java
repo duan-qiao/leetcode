@@ -1,5 +1,7 @@
 package cn.edu.seu.sky.offer;
 
+import cn.edu.seu.sky.common.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,15 +25,6 @@ public class Offer22_KthFromEnd {
         return pre;
     }
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     public void printNode(ListNode head) {
         List<Integer> list = new ArrayList<>();
         while (head != null) {
@@ -42,21 +35,8 @@ public class Offer22_KthFromEnd {
     }
 
     public static void main(String[] args) {
-        ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(3);
-        ListNode node4 = new ListNode(4);
-        ListNode node5 = new ListNode(5);
-        ListNode node6 = new ListNode(6);
-        node1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-        node4.next = node5;
-        node5.next = node6;
-
+        ListNode node = ListNode.create(new int[]{1, 2, 3, 4, 5, 6}).print();
         Offer22_KthFromEnd function = new Offer22_KthFromEnd();
-        function.printNode(node1);
-        ListNode listNode = function.getKthFromEnd(node1, 2);
-        function.printNode(listNode);
+        function.getKthFromEnd(node, 2).print();
     }
 }

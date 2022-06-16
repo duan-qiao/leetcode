@@ -1,10 +1,6 @@
 package cn.edu.seu.sky.offer;
 
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import cn.edu.seu.sky.common.TreeNode;
 
 /**
  * @author xiaotian
@@ -23,33 +19,6 @@ public class Offer27_MirrorTree {
         root.left = mirrorTree(root.right);
         root.right = left;
         return root;
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
-    public void printTree(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        while (!queue.isEmpty()) {
-            TreeNode node = queue.poll();
-            if (node.left != null) {
-                queue.offer(node.left);
-            }
-            if (node.right != null) {
-                queue.offer(node.right);
-            }
-            list.add(node.val);
-        }
-        System.out.println(list);
     }
 
     public static void main(String[] args) {
@@ -71,8 +40,8 @@ public class Offer27_MirrorTree {
         // 输入：root = [4,2,7,1,3,6,9]
         // 输出：[4,7,2,9,6,3,1]
         Offer27_MirrorTree function = new Offer27_MirrorTree();
-        function.printTree(node1);
+        TreeNode.print(node1);
         TreeNode treeNode = function.mirrorTree(node1);
-        function.printTree(treeNode);
+        TreeNode.print(treeNode);
     }
 }
