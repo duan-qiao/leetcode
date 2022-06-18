@@ -32,7 +32,7 @@ public class Offer24_ReverseList {
     }
 
     public static void main(String[] args) {
-        ListNode node1 = ListNode.create(new int[]{1, 2, 3, 4, 5}).print();
+        ListNode node1 = ListNode.create(1, 2, 3, 4, 5).print();
         Offer24_ReverseList function = new Offer24_ReverseList();
         function.reverseList(node1).print();
     }

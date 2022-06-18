@@ -34,12 +34,12 @@ public class Hot02_TwoAdd {
     public static void main(String[] args) {
         Hot02_TwoAdd func = new Hot02_TwoAdd();
 
-        ListNode node1 = ListNode.create(new int[]{2, 4, 5}).print();
-        ListNode node2 = ListNode.create(new int[]{5, 6, 4}).print();
+        ListNode node1 = ListNode.create(2, 4, 5).print();
+        ListNode node2 = ListNode.create(5, 6, 4).print();
         func.addTwoNumbers(node1, node2).print();
 
-        ListNode node4 = ListNode.create(new int[]{9, 9, 9, 9, 9, 9, 9}).print();
-        ListNode node5 = ListNode.create(new int[]{9, 9, 9, 9}).print();
+        ListNode node4 = ListNode.create(9, 9, 9, 9, 9, 9, 9).print();
+        ListNode node5 = ListNode.create(9, 9, 9, 9).print();
         func.addTwoNumbers(node4, node5).print();
     }
 }

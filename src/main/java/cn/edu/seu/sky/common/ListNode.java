@@ -18,7 +18,7 @@ public class ListNode {
         this.val = val;
     }
 
-    public static ListNode create(int[] array) {
+    public static ListNode create(int... array) {
         ListNode node = new ListNode();
         ListNode p = node;
         for (int i : array) {
@@ -37,5 +37,17 @@ public class ListNode {
         } while (p != null);
         System.out.println(list);
         return this;
+    }
+
+    public boolean equals(ListNode node) {
+        ListNode p = this;
+        while (node != null && p != null) {
+            if (node.val != p.val) {
+                return false;
+            }
+            node = node.next;
+            p = p.next;
+        }
+        return node == null && p == null;
     }
 }

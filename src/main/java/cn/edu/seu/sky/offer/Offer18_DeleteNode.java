@@ -25,7 +25,7 @@ public class Offer18_DeleteNode {
     }
 
     public static void main(String[] args) {
-        ListNode node = ListNode.create(new int[]{4, 5, 1, 9}).print();
+        ListNode node = ListNode.create(4, 5, 1, 9).print();
         Offer18_DeleteNode function = new Offer18_DeleteNode();
         function.deleteNode(node, 1).print();
     }

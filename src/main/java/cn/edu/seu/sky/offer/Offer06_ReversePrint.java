@@ -42,7 +42,7 @@ public class Offer06_ReversePrint {
     }
 
     public static void main(String[] args) {
-        ListNode head = ListNode.create(new int[]{1, 3, 2}).print();
+        ListNode head = ListNode.create(1, 3, 2).print();
         Offer06_ReversePrint function = new Offer06_ReversePrint();
         System.out.println(Arrays.toString(function.reversePrint(head)));
     }

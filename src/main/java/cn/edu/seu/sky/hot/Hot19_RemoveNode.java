@@ -30,10 +30,10 @@ public class Hot19_RemoveNode {
     public static void main(String[] args) {
         Hot19_RemoveNode func = new Hot19_RemoveNode();
 
-        ListNode node = ListNode.create(new int[]{1, 2, 3, 4, 5}).print();
+        ListNode node = ListNode.create(1, 2, 3, 4, 5).print();
         func.removeNthFromEnd(node, 2).print();
 
-        ListNode node1 = ListNode.create(new int[]{1}).print();
+        ListNode node1 = ListNode.create(1).print();
         System.out.println(func.removeNthFromEnd(node1, 1) == null);
     }
 }

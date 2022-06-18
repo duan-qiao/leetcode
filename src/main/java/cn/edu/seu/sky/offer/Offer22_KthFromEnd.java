@@ -35,7 +35,7 @@ public class Offer22_KthFromEnd {
     }
 
     public static void main(String[] args) {
-        ListNode node = ListNode.create(new int[]{1, 2, 3, 4, 5, 6}).print();
+        ListNode node = ListNode.create(1, 2, 3, 4, 5, 6).print();
         Offer22_KthFromEnd function = new Offer22_KthFromEnd();
         function.getKthFromEnd(node, 2).print();
     }

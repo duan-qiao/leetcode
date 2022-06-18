@@ -26,8 +26,8 @@ public class Offer25_MergeList {
     }
 
     public static void main(String[] args) {
-        ListNode node1 = ListNode.create(new int[]{1, 2, 4}).print();
-        ListNode node2 = ListNode.create(new int[]{1, 3, 5}).print();
+        ListNode node1 = ListNode.create(1, 2, 4).print();
+        ListNode node2 = ListNode.create(1, 3, 5).print();
 
         Offer25_MergeList function = new Offer25_MergeList();
         function.mergeTwoLists(node1, node2).print();
