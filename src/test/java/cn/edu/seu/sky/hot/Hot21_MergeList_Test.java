@@ -3,14 +3,13 @@ package cn.edu.seu.sky.hot;
 import cn.edu.seu.sky.BaseTest;
 import cn.edu.seu.sky.common.ListNode;
 import org.junit.Assert;
-import org.junit.Test;
 
 /**
  * @author xiaotian on 2022/6/17
  */
 public class Hot21_MergeList_Test extends BaseTest {
 
-    @Test
+    @Override
     public void test() {
         Hot21_MergeList func = new Hot21_MergeList();
 

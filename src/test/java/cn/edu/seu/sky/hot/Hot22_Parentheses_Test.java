@@ -2,14 +2,13 @@ package cn.edu.seu.sky.hot;
 
 import cn.edu.seu.sky.BaseTest;
 import org.junit.Assert;
-import org.junit.Test;
 
 /**
  * @author xiaotian on 2022/6/18
  */
 public class Hot22_Parentheses_Test extends BaseTest {
 
-    @Test
+    @Override
     public void test() {
         Hot22_Parentheses func = new Hot22_Parentheses();
 

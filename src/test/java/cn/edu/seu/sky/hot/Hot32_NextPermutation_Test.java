@@ -2,7 +2,6 @@ package cn.edu.seu.sky.hot;
 
 import cn.edu.seu.sky.BaseTest;
 import org.junit.Assert;
-import org.junit.Test;
 
 import java.util.Arrays;
 
@@ -11,7 +10,7 @@ import java.util.Arrays;
  */
 public class Hot32_NextPermutation_Test extends BaseTest {
 
-    @Test
+    @Override
     public void test() {
         Hot32_NextPermutation func = new Hot32_NextPermutation();
 
