@@ -48,6 +48,9 @@ public class Offer34_PathSum {
         TreeNode node9 = new TreeNode(8, node5, node7);
         TreeNode node10 = new TreeNode(5, node8, node9);
 
+        node10.preOrderTraversal().inOrderTraversal().postOrderTraversal().levelOderTraversal();
+
+
         Offer34_PathSum function = new Offer34_PathSum();
         System.out.println(function.pathSum(node10, 22));
     }

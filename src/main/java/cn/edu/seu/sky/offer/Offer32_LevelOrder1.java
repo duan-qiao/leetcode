@@ -2,7 +2,10 @@ package cn.edu.seu.sky.offer;
 
 import cn.edu.seu.sky.common.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * @author xiaotian
@@ -18,6 +21,7 @@ public class Offer32_LevelOrder1 {
         List<Integer> list = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
+
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
             list.add(node.val);
@@ -33,22 +37,5 @@ public class Offer32_LevelOrder1 {
             array[i] = list.get(i);
         }
         return array;
-//        return list.stream().mapToInt(Integer::valueOf).toArray();
-    }
-
-    public static void main(String[] args) {
-        TreeNode root = new TreeNode(3);
-        TreeNode node1 = new TreeNode(9);
-        TreeNode node2 = new TreeNode(20);
-        TreeNode node3 = new TreeNode(15);
-        TreeNode node4 = new TreeNode(7);
-
-        root.left = node1;
-        root.right = node2;
-        node2.left = node3;
-        node2.right = node4;
-
-        Offer32_LevelOrder1 function = new Offer32_LevelOrder1();
-        System.out.println(Arrays.toString(function.levelOrder(root)));
     }
 }
