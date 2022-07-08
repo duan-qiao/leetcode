@@ -136,5 +136,6 @@ public class TreeNode {
                 .postOrderTraversal()
                 // 层次遍历
                 .levelOderTraversal();
+        System.out.println(root.levelOderPath());
     }
 }

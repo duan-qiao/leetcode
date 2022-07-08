@@ -34,24 +34,4 @@ public class Offer34_PathSum {
         recur(root.right, tar);
         path.removeLast();
     }
-
-    public static void main(String[] args) {
-        TreeNode node1 = new TreeNode(7);
-        TreeNode node2 = new TreeNode(2);
-        TreeNode node3 = new TreeNode(5);
-        TreeNode node4 = new TreeNode(1);
-        TreeNode node5 = new TreeNode(13);
-
-        TreeNode node6 = new TreeNode(11, node1, node2);
-        TreeNode node7 = new TreeNode(4, node3, node4);
-        TreeNode node8 = new TreeNode(4, node6, null);
-        TreeNode node9 = new TreeNode(8, node5, node7);
-        TreeNode node10 = new TreeNode(5, node8, node9);
-
-        node10.preOrderTraversal().inOrderTraversal().postOrderTraversal().levelOderTraversal();
-
-
-        Offer34_PathSum function = new Offer34_PathSum();
-        System.out.println(function.pathSum(node10, 22));
-    }
 }
