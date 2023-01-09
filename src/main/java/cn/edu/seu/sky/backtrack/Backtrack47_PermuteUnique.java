@@ -1,22 +1,24 @@
-package cn.edu.seu.sky.hot;
+package cn.edu.seu.sky.backtrack;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author xiaotian on 2022/6/28
- * https://leetcode.cn/problems/permutations/
+ * @author xiaotian on 2023/1/9
+ * https://leetcode.cn/problems/permutations-ii/
  */
-public class Hot46_Permutations {
+public class Backtrack47_PermuteUnique {
 
-    public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
         if (nums.length == 0) {
-            return result;
+            return res;
         }
-        backtrack(result, new LinkedList<>(), nums, new boolean[nums.length]);
-        return result;
+        Arrays.sort(nums);
+        backtrack(res, new LinkedList<>(), nums, new boolean[nums.length]);
+        return res;
     }
 
     private void backtrack(List<List<Integer>> res, LinkedList<Integer> path, int[] nums, boolean[] used) {
@@ -25,6 +27,10 @@ public class Hot46_Permutations {
             return;
         }
         for (int i = 0; i < nums.length; i++) {
+            // 新添加的剪枝逻辑，固定相同的元素在排列中的相对位置
+            if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) {
+                continue;
+            }
             if (!used[i]) {
                 path.addLast(nums[i]);
                 used[i] = true;

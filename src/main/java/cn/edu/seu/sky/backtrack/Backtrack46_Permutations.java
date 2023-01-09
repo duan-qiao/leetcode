@@ -1,4 +1,4 @@
-package cn.edu.seu.sky.hot;
+package cn.edu.seu.sky.backtrack;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -8,7 +8,7 @@ import java.util.List;
  * @author xiaotian on 2022/6/28
  * https://leetcode.cn/problems/permutations/
  */
-public class Hot46_Permutations {
+public class Backtrack46_Permutations {
 
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
