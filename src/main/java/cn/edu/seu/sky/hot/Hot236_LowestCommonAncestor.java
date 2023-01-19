@@ -1,13 +1,12 @@
-package cn.edu.seu.sky.offer;
+package cn.edu.seu.sky.hot;
 
 import cn.edu.seu.sky.common.TreeNode;
 
 /**
- * @author xiaotian
- * <p>
- * 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
+ * @author xiaotian on 2023/1/18
+ * https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/?favorite=2cktkvj
  */
-public class Offer68_CommonAncestor2 {
+public class Hot236_LowestCommonAncestor {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) {
